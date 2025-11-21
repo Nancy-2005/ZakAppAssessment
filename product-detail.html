@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail | Abokichi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="top-bar exact-black">
+      <div class="top-left">
+        <span class="currency">USD <span class="chevron">&#9660;</span></span>
+        <span class="divider">|</span>
+        <span class="stores">
+          <span class="icon-location">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="7" r="2" stroke="currentColor" stroke-width="1.2"/><path d="M8 15C8 15 2.5 9.5 2.5 6.5C2.5 3.46 5.01 1 8 1C10.99 1 13.5 3.46 13.5 6.5C13.5 9.5 8 15 8 15Z" stroke="currentColor" stroke-width="1.2"/></svg>
+          </span>
+          Stores
+        </span>
+      </div>
+      <div class="top-right">
+        <a href="#" class="login">Login/ Register</a>
+      </div>
+    </div>
+    <header class="site-header exact-white">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Abokichi Logo" class="brand-logo" />
+        <span class="brand-text">ABOKICHI</span>
+      </div>
+      <nav class="main-nav">
+        <a href="products.html" class="active">Shop</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#recipes">Recipes</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Search">
+          <span class="icon-search">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="7" stroke="#222" stroke-width="2"/><line x1="16.2929" y1="16.7071" x2="20" y2="20.4142" stroke="#222" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <span class="icon-heart">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19s-7-5.053-7-10A5 5 0 0 1 11 4a5 5 0 0 1 7 5c0 4.947-7 10-7 10Z" stroke="#222" stroke-width="2" fill="none"/></svg>
+          </span>
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          <span class="icon-bag">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="7" width="14" height="11" rx="2" stroke="#222" stroke-width="2" fill="none"/><path d="M7 7V5a4 4 0 0 1 8 0v2" stroke="#222" stroke-width="2" fill="none"/></svg>
+          </span>
+        </button>
+        <span class="cart-count-badge" data-cart-count>0</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs">
+        <a href="products.html">Shop</a>
+        <span class="breadcrumb-separator">></span>
+        <span class="breadcrumb-current" id="breadcrumb-product-name">Product</span>
+      </section>
+
+      <!-- Product Detail Section -->
+      <section class="product-detail-section">
+        <div class="product-detail-gallery">
+          <div class="product-main-image">
+            <img id="product-main-img" src="" alt="Product" />
+          </div>
+          <div class="product-thumbnails">
+            <button class="thumbnail-arrow left" id="thumb-prev">‹</button>
+            <div class="thumbnail-container">
+              <div class="thumbnail-list" id="thumbnail-list"></div>
+            </div>
+            <button class="thumbnail-arrow right" id="thumb-next">›</button>
+          </div>
+        </div>
+
+        <div class="product-detail-info">
+          <h1 class="product-detail-title" id="product-title">Loading...</h1>
+          <div class="product-detail-price">
+            <span class="current-price" id="current-price">$0.00</span>
+            <span class="old-price" id="old-price"></span>
+          </div>
+          <div class="product-detail-rating">
+            <span class="stars" id="product-stars">★★★★★</span>
+            <span class="reviews-count" id="reviews-count">0 Reviews</span>
+          </div>
+          <p class="product-short-desc" id="product-short-desc">Your new cooking BFF! You can add this to virtually everything. Try it on rice, on meat or tofu, in your burger, ramen and pretty much anything.</p>
+          
+          <div class="product-actions">
+            <button class="btn-add-cart" id="add-to-cart">ADD TO CART</button>
+            <button class="btn-buy-now" id="buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-wishlist">
+            <a href="#" class="wishlist-link" id="wishlist-link">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.5s-6-4.5-6-9A4.5 4.5 0 0 1 9 3.75a4.5 4.5 0 0 1 6 3.75c0 4.5-6 9-6 9Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+              WISHLIST
+            </a>
+          </div>
+
+          <div class="product-share">
+            <span class="share-label">SHARE:</span>
+            <div class="share-icons">
+              <a href="#" aria-label="Facebook" class="share-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5.006 3.676 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.324 21.128 22 17.006 22 12z"/></svg>
+              </a>
+              <a href="#" aria-label="Twitter" class="share-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.92 4.92 0 0 0 16.616 3c-2.73 0-4.942 2.21-4.942 4.932 0 .386.045.762.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965c-.423.722-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.237-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.057 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A9.936 9.936 0 0 0 24 4.557z"/></svg>
+              </a>
+              <a href="#" aria-label="Pinterest" class="share-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.396 7.633 11.093-.105-.943-.2-2.393.042-3.425.219-.963 1.41-6.137 1.41-6.137s-.36-.72-.36-1.782c0-1.67.968-2.918 2.172-2.918 1.025 0 1.52.77 1.52 1.693 0 1.032-.656 2.574-.995 4.01-.283 1.2.601 2.178 1.782 2.178 2.138 0 3.782-2.254 3.782-5.507 0-2.88-2.07-4.89-5.03-4.89-3.43 0-5.44 2.572-5.44 5.23 0 1.032.397 2.142.892 2.743.099.12.113.225.083.345-.09.36-.292 1.142-.332 1.3-.05.2-.16.242-.37.146-1.38-.64-2.24-2.65-2.24-4.27 0-3.48 2.53-6.68 7.29-6.68 3.83 0 6.38 2.73 6.38 5.67 0 3.97-2.21 6.93-5.48 6.93-1.1 0-2.13-.6-2.48-1.28l-.68 2.59c-.2.77-.6 1.74-.89 2.33.67.21 1.38.32 2.12.32 6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Tabs -->
+      <section class="product-tabs-section">
+        <div class="product-tabs">
+          <button class="product-tab active" data-tab="description">DESCRIPTION</button>
+          <button class="product-tab" data-tab="reviews">REVIEWS</button>
+          <button class="product-tab" data-tab="videos">VIDEOS</button>
+          <button class="product-tab" data-tab="comments">COMMENTS</button>
+        </div>
+
+        <div class="product-tab-content">
+          <div class="tab-pane active" id="tab-description">
+            <div class="product-description-content" id="product-description-content"></div>
+          </div>
+          <div class="tab-pane" id="tab-reviews">
+            <div class="reviews-content">
+              <p>No reviews yet. Be the first to review this product!</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-videos">
+            <div class="videos-content">
+              <p>No videos available for this product.</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-comments">
+            <div class="comments-content">
+              <p>No comments yet. Be the first to comment!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-newsletter-bar">
+        <div class="footer-newsletter-left">
+          <span class="footer-newsletter-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 20L34 8L28 36L19 25L6 20Z" stroke="#fff" stroke-width="2" fill="none"/><path d="M19 25L28 36" stroke="#fff" stroke-width="2"/></svg>
+          </span>
+          <div class="footer-newsletter-text">
+            <div class="footer-newsletter-title">SUBSCRIBE NEWSLETTER</div>
+            <div class="footer-newsletter-desc">get the latest on sales, new releases and more.</div>
+          </div>
+        </div>
+        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+          <input type="email" placeholder="Enter your mail" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+      <div class="footer-main">
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">LINKS</div>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">INFORMATION</div>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund policy</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-payments">
+          <img src="assets/images/card.png" alt="Visa" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5.006 3.676 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.324 21.128 22 17.006 22 12z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.92 4.92 0 0 0 16.616 3c-2.73 0-4.942 2.21-4.942 4.932 0 .386.045.762.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965c-.423.722-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.237-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.057 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A9.936 9.936 0 0 0 24 4.557z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.131 4.602.425 3.635 1.392 2.668 2.359 2.374 3.532 2.315 4.809.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.277.353 2.45 1.32 3.417.967.967 2.14 1.261 3.417 1.32C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.277-.059 2.45-.353 3.417-1.32.967-.967 1.261-2.14 1.32-3.417.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.277-.353-2.45-1.32-3.417-.967-.967-2.14-1.261-3.417-1.32C15.668.013 15.259 0 12 0z"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M23.498 6.186a2.993 2.993 0 0 0-2.107-2.117C19.163 3.5 12 3.5 12 3.5s-7.163 0-9.391.569A2.993 2.993 0 0 0 .502 6.186C0 8.414 0 12 0 12s0 3.586.502 5.814a2.993 2.993 0 0 0 2.107 2.117C4.837 20.5 12 20.5 12 20.5s7.163 0 9.391-.569a2.993 2.993 0 0 0 2.107-2.117C24 15.586 24 12 24 12s0-3.586-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.396 7.633 11.093-.105-.943-.2-2.393.042-3.425.219-.963 1.41-6.137 1.41-6.137s-.36-.72-.36-1.782c0-1.67.968-2.918 2.172-2.918 1.025 0 1.52.77 1.52 1.693 0 1.032-.656 2.574-.995 4.01-.283 1.2.601 2.178 1.782 2.178 2.138 0 3.782-2.254 3.782-5.507 0-2.88-2.07-4.89-5.03-4.89-3.43 0-5.44 2.572-5.44 5.23 0 1.032.397 2.142.892 2.743.099.12.113.225.083.345-.09.36-.292 1.142-.332 1.3-.05.2-.16.242-.37.146-1.38-.64-2.24-2.65-2.24-4.27 0-3.48 2.53-6.68 7.29-6.68 3.83 0 6.38 2.73 6.38 5.67 0 3.97-2.21 6.93-5.48 6.93-1.1 0-2.13-.6-2.48-1.28l-.68 2.59c-.2.77-.6 1.74-.89 2.33.67.21 1.38.32 2.12.32 6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.966 0-1.75-.79-1.75-1.75s.784-1.75 1.75-1.75 1.75.79 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.38v4.59h-3v-9h2.89v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></a>
+        </div>
+        <div class="footer-copyright">© 2021 Abokichi.</div>
+      </div>
+    </footer>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/product-detail.js" defer></script>
+  </body>
+</html>
